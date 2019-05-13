@@ -1,12 +1,14 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * Classe que representa cona no bytebank
  * @author cesar.pamplona
  * @version 1
  *
  */
-public abstract class Conta extends Object implements Comparable<Conta> {
+public abstract class Conta extends Object implements Comparable<Conta>, Serializable {
 
 	protected double saldo;
 	private int agencia;
